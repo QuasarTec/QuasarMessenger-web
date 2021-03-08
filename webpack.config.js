@@ -258,7 +258,7 @@ module.exports = (env, argv) => {
                     },
                 },
                 {
-                    test: /\.(gif|png|svg|ttf|woff|woff2|xml|ico)$/,
+                    test: /\.(gif|png|svg|jpg|jpeg|ttf|woff|woff2|xml|ico)$/,
                     // Use a content-based hash in the name so that we can set a long cache
                     // lifetime for assets while still delivering changes quickly.
                     oneOf: [
