@@ -35,6 +35,8 @@
     "reskindex:watch": "reskindex -h src/header -w",
     "reskindex:watch-react": "node scripts/yarn-sub.js matrix-react-sdk reskindex:watch",
     "clean": "rimraf lib webapp",
+    "build-copy": "yarn build && yarn copy",
+    "copy": "xcopy \"webapp\" \"../Desktop/webapp\" /H/Y/E",
     "build": "yarn clean && yarn build:genfiles && yarn build:compile && yarn build:types && yarn build:bundle",
     "build-stats": "yarn clean && yarn build:genfiles && yarn build:compile && yarn build:types && yarn build:bundle-stats",
     "build:jitsi": "node scripts/build-jitsi.js",
