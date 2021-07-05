@@ -18,7 +18,7 @@
     "integrations_widgets_urls": ["https://dimension.quasaria.ru/widgets"],
     "integrations_jitsi_widget_url": "https://dimension.quasaria.ru/widgets/jitsi",
     "bug_report_endpoint_url": "https://element.io/bugreports/submit",
-    "brand_room_id": "!soeZCyfOVPGyOKcKnv:matrix.easy-stars.ru",
+    "brand_room_id": "!pPZzgOXfPIshLzIJdE:qm.quasaria.ru",
     "enable_integration_manager": true,
     "allow_iceserver_fallback": false,
     "faq_link": {
