@@ -18,14 +18,14 @@ const fname = path.join("webapp", "jitsi_external_api.min.js");
 
 const options = {};
 if (process.env.HTTPS_PROXY) {
-   options.agent = new ProxyAgent(process.env.HTTPS_PROXY, {tunnel: true});
+    options.agent = new ProxyAgent(process.env.HTTPS_PROXY, {tunnel: true});
 }
 
-fetch("https://meet.easy-stars.ru/libs/external_api.min.js", options).then(res => {
-   const stream = fs.createWriteStream(fname);
-   return new Promise((resolve, reject) => {
-       res.body.pipe(stream);
-       res.body.on('error', err => reject(err));
-       res.body.on('finish', () => resolve());
-   });
+fetch("https://qtconnect.ru/libs/external_api.min.js", options).then(res => {
+    const stream = fs.createWriteStream(fname);
+    return new Promise((resolve, reject) => {
+        res.body.pipe(stream);
+        res.body.on('error', err => reject(err));
+        res.body.on('finish', () => resolve());
+    });
 }).then(() => console.log('Done with Jitsi download'));
